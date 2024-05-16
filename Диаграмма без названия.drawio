@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T18:31:51.516Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36" version="24.4.3" etag="eab9MF1nTGWyRgJeKsoF" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T18:43:35.972Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36" etag="qSPoHoJ0dJ-VnhR6U_bz" version="24.4.3" type="github">
   <diagram name="Страница — 1" id="0-pyYYd01ZeR4p7GOieD">
-    <mxGraphModel>
+    <mxGraphModel dx="996" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-1" value="YaApi" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="240" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-4" value="+ GetWeatherByPoint(lat:doublee, lon:double): Root" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwM2v7hRj4C0Th2QsBkX-1">
+          <mxGeometry y="26" width="230" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-5" value="Client" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="268" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-6" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="290" as="sourcePoint" />
+            <mxPoint x="390" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-7" value="Api" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="260" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-8" value="Root" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="420" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.091;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OwM2v7hRj4C0Th2QsBkX-5" target="OwM2v7hRj4C0Th2QsBkX-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="240" y="380" as="sourcePoint" />
+            <mxPoint x="400" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-10" value="Root" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-12" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.384;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OwM2v7hRj4C0Th2QsBkX-4" target="OwM2v7hRj4C0Th2QsBkX-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="sourcePoint" />
+            <mxPoint x="640" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwM2v7hRj4C0Th2QsBkX-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Gateway&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;Паттерн шлюз используется для инкапсуляции логики обращения к стороннему ресурсу(WebApi или БД)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="500" width="180" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
